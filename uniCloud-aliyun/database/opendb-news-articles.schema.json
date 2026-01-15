@@ -1,0 +1,155 @@
+{
+	"bsonType": "object",
+	"permission": {
+		"read": true,
+		"create": "auth.uid != null",
+		"update": "auth.uid != null",
+		"delete": "auth.uid != null"
+	},
+	"properties": {
+		"_id": {
+			"description": "存储文档 ID（用户 ID），系统自动生成"
+		},
+		"poster": {
+			"bsonType": "string",
+			"title": "封面大图",
+			"description": "缩略图地址",
+			"label": "封面大图",
+			"trim": "both"
+		},
+		"video": {
+			"bsonType": "string",
+			"title": "视频",
+			"description": "视频地址",
+			"label": "视频",
+			"trim": "both"
+		},
+		"cnDetails": {
+			"bsonType": "object",
+			"title": "中国",
+			"description": "中国",
+			"label": "中国",
+			"properties": {
+				"name": {
+					"bsonType": "string"
+				},
+				"en": {
+					"bsonType": "string",
+					"description": "英文"
+				},
+				"abbr": {
+					"bsonType": "string",
+					"description": "缩写"
+				},
+				"define": {
+					"bsonType": "string",
+					"description": "定义"
+				},
+				"category_id": {
+					"bsonType": "string",
+					"title": "分类",
+					"description": "分类 id，参考`uni-news-categories`表",
+					"foreignKey": "opendb-news-categories._id",
+					"enum": {
+						"collection": "opendb-news-categories",
+						"field": "name as text, _id as value"
+					}
+				},
+				"source": {
+					"bsonType": "string",
+					"description": "来源"
+				},
+				"expand": {
+					"bsonType": "string",
+					"description": "拓展"
+				}
+			}
+		},
+		"usDetails": {
+			"bsonType": "object",
+			"title": "美国",
+			"description": "美国",
+			"label": "美国",
+			"properties": {
+				"name": {
+					"bsonType": "string"
+				},
+				"abbr": {
+					"bsonType": "string",
+					"description": "缩写"
+				},
+				"define": {
+					"bsonType": "string",
+					"description": "定义"
+				},
+				"category_id": {
+					"bsonType": "string",
+					"title": "分类",
+					"description": "分类 id，参考`uni-news-categories`表",
+					"foreignKey": "opendb-news-categories._id",
+					"enum": {
+						"collection": "opendb-news-categories",
+						"field": "name as text, _id as value"
+					}
+				},
+				"source": {
+					"bsonType": "string",
+					"description": "来源"
+				},
+				"expand": {
+					"bsonType": "string",
+					"description": "拓展"
+				}
+			}
+		},
+		"euDetails": {
+			"bsonType": "object",
+			"title": "欧盟",
+			"description": "欧盟",
+			"label": "欧盟",
+			"properties": {
+				"name": {
+					"bsonType": "string"
+				},
+				"abbr": {
+					"bsonType": "string",
+					"description": "缩写"
+				},
+				"define": {
+					"bsonType": "string",
+					"description": "定义"
+				},
+				"category_id": {
+					"bsonType": "string",
+					"title": "分类",
+					"description": "分类 id，参考`uni-news-categories`表",
+					"foreignKey": "opendb-news-categories._id",
+					"enum": {
+						"collection": "opendb-news-categories",
+						"field": "name as text, _id as value"
+					}
+				},
+				"source": {
+					"bsonType": "string",
+					"description": "来源"
+				},
+				"expand": {
+					"bsonType": "string",
+					"description": "拓展"
+				}
+			}
+		},
+		"compareResult": {
+			"bsonType": "string",
+			"description": "对比分析"
+		},
+		"last_modify_date": {
+			"bsonType": "timestamp",
+			"title": "最后修改时间",
+			"description": "最后修改时间",
+			"defaultValue": {
+				"$env": "now"
+			}
+		}
+	}
+}

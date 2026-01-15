@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["components/uni-load-state/i18n/index.js"],"sourcesContent":["import en from './en.json'\nimport zhHans from './zh-Hans.json'\nexport default {\n\ten,\n\t'zh-Hans': zhHans\n}\n"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;AAEA,MAAe,WAAA;AAAA,EACd;AAAA,EACA,WAAW;AACZ;;"}

@@ -1,0 +1,1 @@
+page{background-color:#f7f7f7;height:100%;overflow:hidden}.search{padding:0 30rpx 20rpx;background-color:#f9f6f6}.params{padding:0 30rpx;background-color:#f9f6f6}.paramsItem{display:flex;flex-direction:column;padding:10px;border:1px solid #ddd;border-radius:5px;background-color:#fff;margin-bottom:10px}.scroll-view{flex:1;overflow:hidden;padding-bottom:100px}

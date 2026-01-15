@@ -1,0 +1,32 @@
+
+.notification.data-v-1c2e4c1e {
+		background-color: #f8f8f8;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		padding: 16px;
+		margin-bottom: 16px;
+}
+.notification-header.data-v-1c2e4c1e {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 8px;
+}
+.notification-title.data-v-1c2e4c1e {
+		font-size: 18px;
+		margin: 0;
+		text-align: center;
+}
+.notification-close.data-v-1c2e4c1e {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		font-size: 18px;
+		padding: 0;
+}
+.notification-content.data-v-1c2e4c1e {
+		font-size: 14px;
+		color: #333;
+		text-indent: 2em;
+		line-height: 1.5;
+}

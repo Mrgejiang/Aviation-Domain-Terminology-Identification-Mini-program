@@ -1,0 +1,1 @@
+{"version":3,"file":"call-check-version.js","sources":["../../../../../../../uni_modules/uni-upgrade-center-app/utils/call-check-version.js"],"sourcesContent":null,"names":["Promise","resolve","reject","message"],"mappings":"sCAAe,WAyBd,OAAO,IAAIA,SAAQ,CAACC,EAASC,KACrBA,EAAA,CACNC,QAAS,YACT,GAGH"}

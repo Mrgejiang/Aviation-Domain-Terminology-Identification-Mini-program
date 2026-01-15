@@ -1,0 +1,24 @@
+const db = uniCloud.database();
+const dbCmd = db.command
+let id = '66db05aaeef9cba9346d7a52'
+db.collection('opendb-news-articles').where(dbCmd.or([{
+			cnDetails: {
+				category_id: id
+			}
+		},
+		{
+			usDetails: {
+				category_id: id
+			}
+		},
+		{
+			euDetails: {
+				category_id: id
+			}
+		},
+	])).field(
+		'_id,poster,cnDetails.name,cnDetails.category_id,usDetails.name,usDetails.category_id,euDetails.name,euDetails.category_id'
+	).get()
+	.then(res => {
+		console.log('debug', res.result.data);
+	})

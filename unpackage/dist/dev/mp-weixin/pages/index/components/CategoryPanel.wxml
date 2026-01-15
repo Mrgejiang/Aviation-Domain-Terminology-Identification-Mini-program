@@ -1,0 +1,1 @@
+<view class="category"><view wx:for="{{a}}" wx:for-item="item" wx:key="c" class="category-item" hover-class="none" open-type="switchTab" bindtap="{{item.d}}"><image class="icon" src="{{item.a}}"></image><text class="text">{{item.b}}</text></view><view/><view wx:if="{{b}}" class="moreView"><button class="more" bindtap="{{d}}">{{c}}</button></view></view>

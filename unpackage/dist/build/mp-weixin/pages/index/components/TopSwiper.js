@@ -1,0 +1,1 @@
+"use strict";const e=require("../../../common/vendor.js"),t=e.defineComponent({__name:"TopSwiper",props:{list:{}},setup(t){const i=e.ref(0),n=e=>{i.value=e.detail.current};return(t,o)=>({a:e.f(t.list,((e,t,i)=>({a:e.imgUrl,b:`/pages/notice/notice?id=${e._id}`,c:e._id}))),b:e.o(n),c:e.f(t.list,((e,t,n)=>({a:e._id,b:t===i.value?1:""})))})}});wx.createComponent(t);

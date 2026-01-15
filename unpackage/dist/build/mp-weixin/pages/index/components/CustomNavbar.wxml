@@ -1,0 +1,1 @@
+<view class="navbar" style="{{'padding-top:' + f}}"><view class="logo"><image class="logo-image" src="{{a}}"></image><text class="logo-text">津 门 兰 鸢</text></view><view class="search"><uni-easyinput wx:if="{{e}}" bindiconClick="{{b}}" bindconfirm="{{c}}" u-i="4ac0ee8f-0" bind:__l="__l" bindupdateModelValue="{{d}}" u-p="{{e}}"/></view></view>

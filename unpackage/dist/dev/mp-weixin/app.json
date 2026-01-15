@@ -1,0 +1,87 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/notice/notice",
+    "pages/ucenter/ucenter",
+    "pages/uni-agree/uni-agree",
+    "pages/ucenter/settings/settings",
+    "pages/ucenter/read-news-log/read-news-log",
+    "pages/details/details",
+    "pages/category/category",
+    "pages/agent/agent",
+    "pages/ucenter/favorite/favorite",
+    "pages/search/search"
+  ],
+  "subPackages": [
+    {
+      "root": "uni_modules/uni-feedback",
+      "pages": [
+        "pages/opendb-feedback/opendb-feedback"
+      ]
+    },
+    {
+      "root": "uni_modules/uni-id-pages/pages",
+      "pages": [
+        "userinfo/userinfo",
+        "userinfo/realname-verify/realname-verify",
+        "login/login-withoutpwd",
+        "login/login-withpwd",
+        "userinfo/deactivate/deactivate",
+        "userinfo/bind-mobile/bind-mobile",
+        "login/login-smscode",
+        "register/register",
+        "retrieve/retrieve",
+        "common/webview/webview",
+        "userinfo/change_pwd/change_pwd",
+        "register/register-by-email",
+        "retrieve/retrieve-by-email",
+        "userinfo/set-pwd/set-pwd"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F8F8F8",
+    "enablePullDownRefresh": false,
+    "rpxCalcMaxDeviceWidth": 375,
+    "rpxCalcBaseDeviceWidth": 375
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#27ba9b",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabs/home_default.png",
+        "selectedIconPath": "static/tabs/home_selected.png"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/category/category",
+        "iconPath": "static/tabs/category_default.png",
+        "selectedIconPath": "static/tabs/category_selected.png"
+      },
+      {
+        "text": "对话",
+        "pagePath": "pages/agent/agent",
+        "iconPath": "static/tabs/agent_default.png",
+        "selectedIconPath": "static/tabs/agent_selected.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/ucenter/ucenter",
+        "iconPath": "static/tabs/user_default.png",
+        "selectedIconPath": "static/tabs/user_selected.png"
+      }
+    ]
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "ignoreDevUnusedFiles": false,
+  "ignoreUploadUnusedFiles": false,
+  "usingComponents": {}
+}

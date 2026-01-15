@@ -1,0 +1,1 @@
+"use strict";const e=require("../../common/vendor.js"),o=e.defineComponent({__name:"notice",setup(o){const n=e.ref("");return e.onLoad((e=>{n.value=e.id,console.log("页面传参",e.id)})),(o,t)=>({a:e.t(n.value)})}}),n=e._export_sfc(o,[["__scopeId","data-v-52c10846"]]);wx.createPage(n);

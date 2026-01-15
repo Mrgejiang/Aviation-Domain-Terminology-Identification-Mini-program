@@ -1,0 +1,1 @@
+"use strict";exports.config={h5:{url:"https://uni-starter.dcloud.net.cn",openApp:{}},mp:{weixin:{id:"wx43fe23855365a31f"}},about:{appName:"兰鸢kite",logo:"/static/logo.png",company:"中国民航大学",slogan:"中美欧航空领域术语查询比对",download:"",version:"2.0.0"},download:{ios:"",android:""},marketId:{ios:"",android:""},i18n:{enable:!1}};
